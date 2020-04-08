@@ -88,8 +88,8 @@ files:
   #     runas: 
 # During the BeforeInstall deployment lifecycle event, run the commands 
 #   in the script specified in "location".
-  BeforeInstall:
-    - location: npm install
+BeforeInstall:
+  - location: npm install
     #   timeout:
     #   runas: 
     # - location: 
@@ -106,8 +106,8 @@ files:
     #   runas:
 # During the ApplicationStart deployment lifecycle event, run the commands 
 #   in the script specified in "location".
-  ApplicationStart:
-    - location: PORT=80 npm start    
+ApplicationStart:
+  - location: PORT=80 npm start    
     #   timeout: 
     #   runas:
     # - location: 
